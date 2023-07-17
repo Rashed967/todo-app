@@ -1,13 +1,14 @@
 import React from 'react';
-import NavBar from '../../../components/NavBar/NavBar';
+import SwipeableTemporaryDrawer from '../../../components/SideBar/SideBar';
+
 
 
 const Home = () => {
     return (
-        <div>
-            <NavBar></NavBar>
+        <>    
+        <SwipeableTemporaryDrawer></SwipeableTemporaryDrawer>
             <h3>Home page</h3>
-        </div>
+        </>
     );
 };
 

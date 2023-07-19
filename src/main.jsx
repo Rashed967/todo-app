@@ -5,6 +5,7 @@ import router from './routes/Routes.jsx'
 import { RouterProvider } from 'react-router-dom'
 import {ThemeProvider } from '@mui/material/styles';
 import theme from './theme/Theme'
+import {Container } from '@mui/material'
 
 
 
@@ -12,7 +13,11 @@ import theme from './theme/Theme'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
+
+   <Container maxWidth="xl">
     <RouterProvider router={router} />
+   </Container>
+  
     </ThemeProvider>
   </React.StrictMode>,
 )
